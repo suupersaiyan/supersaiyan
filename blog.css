@@ -55,9 +55,9 @@ header{
   gap: 4rem;    
 }
 .action{
-  background-color:#e22030;
+  /* background-color:#e22030; */
   color: white;
-  padding: 0.5rem 2rem;
+  /* padding: 0.5rem 2rem; */
   border: none;
   border-radius: 20px;
   font-size: 2.2rem;
@@ -104,6 +104,14 @@ header{
   height: 1.5px;
   background-color: rgb(255, 255, 255);
 }
+.profile{
+  width: 45px;
+  height: 45px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 8px 0 rgba(0, 20, 20, 0.2);
+}
+
 @media(max-width:992px){
   .navbar .links,
   .navbar .action{

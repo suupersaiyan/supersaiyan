@@ -56,6 +56,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 15px;
 }
 .navbar .logo img {
   width: 60px;
@@ -102,11 +103,13 @@ header {
   list-style: none;
   height: 35px;
   padding-left: 45%;
+  margin-top: 5px;
 }
 .dropdown.action {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 5px;
 }
 .header-border {
   width: 100%;
@@ -173,6 +176,7 @@ header {
 }
 .about .row .content {
   flex: 15 1 30rem;
+  margin-right: 20px;
 }
 
 .about .row .content h3 {
