@@ -12,7 +12,7 @@ body {
       rgba(36, 35, 35, 0.574),
       rgba(36, 35, 35, 0.673)
     ),
-    url(../images/index/IMG-20230323-WA0008.jpg);
+    url(./images/index/IMG-20230323-WA0008.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 130vh;
