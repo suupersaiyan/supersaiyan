@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supersaiyan/blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/images/blog/favicon.ico" type="image/x-icon">
+</head>
+ 
+<body>
+              <!-- header -->
+              <header>
+                <div class="navbar">
+                    <div class="logo"><img src="/images/blog/-6118549228528711158_121.jpg" alt=""></div>
+                    <ul class="links">
+                        <li><a href="home">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="#">Statistics</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <a href="#" class="action">Register</a>
+                    <div class="toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="Services">Community</a></li>
+                    <li><a href="Statistics">Statistics</a></li>
+                    <li><a href="Blogs">Blogs</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                    <li><a href="#" class="action">Register</a></li>                 
+                </div>
+                
+            </header>
+            <div class="header-border"></div>
+            <script>
+                const toggleBtn=document.querySelector('.toggle');
+                const btnIcon=document.querySelector('.toggle i');
+                const dropdownMenu=document.querySelector('.dropdown');
+        
+                toggleBtn.onclick = function()
+                {
+                    dropdownMenu.classList.toggle('dropdown')
+                    const isOpen = dropdownMenu.classList.contains('dropdown');
+                    btnIcon.classList = isOpen ? "fa-solid fa-bars" : "fa-solid fa-xmark"
+                    
+                }
+            </script>
+    <!-- headingimage -->
+    <div class="mainimage">
+        <img src="https://thumbs.dreamstime.com/b/horizontal-banner-header-romantic-couple-looking-each-others-eyes-sunset-boyfriend-girlfriend-love-date-259356324.jpg"></img>
+    </div>
+    <div class="main">
+        <!-- heading -->
+        <div class="heading">
+            <h1>Happiest <span>super saiyan</span> stories</h1>
+            <p>If like many many youngsters and young from heart, you too found your super connection on Super Saiyan, we'd love to hear about it.
+            </p>
+            <a href="#">Tell us your story ></a>
+        </div>
+        <div class="heading">
+            <p id="i1">Get to know the Power of Connection: Read Stories of Love and Happiness on Super Saiyan
+            </p>
+        </div>
+        <!-- flexbox -->
+        <div class="flexbox">
+            <div class="flexitem" id="flexitem1">
+                <div class="storyimage">
+                    <img src="/images/blog/304744727-H-1024x700.webp" alt="couple image">
+                </div>
+                <div class="storycontent">
+                    <p>"I never thought I'd meet my soulmate online, but Super Saiyan proved me wrong. We share a deep connection and can't wait to see what the future holds."</p>
+                </div>
+            </div>
+            <div class="flexitem" id="flexitem2">
+                <div class="storyimage">
+                    <img src="/images/blog/couple-poses-couple-hugging-outdoors.webp">
+                </div>
+                <div class="storycontent">
+                    <p>"I had been single for a while, but Super Saiyan helped me find someone who makes me feel alive again. We have so much fun together and always look forward to our next date."
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="flexbox">
+            <div class="flexitem" id="flexitem3">
+                <div class="storyimage">
+                    <img src="/images/blog/50-All-New-Couple-Photo-Pose-Ideas-In-2021-Banner-910x1024.jpg">
+                </div>
+                <div class="storycontent">
+                    <p>"Super Saiyan made it easy to connect with like-minded people. I found someone who shares my sense of humor and we can't stop laughing when we're together."</p>
+                </div>
+            </div>
+
+            <div class="flexitem" id="flexitem4">
+                <div class="storyimage">
+                    <img src="/images/blog/images (1).jpg">
+                </div>
+                <div class="storycontent">
+                    <p>"Super Saiyan helped me find someone who understands me on a deep level. We have similar life goals and share a love for adventure. Thanks to this platform, we're living life to the fullest together."
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="flexbox">
+            <div class="flexitem" id="flexitem5">
+                <div class="storyimage">
+                    <img src="/images/blog/images (2).jpg">
+                </div>
+                <div class="storycontent">
+                    <p>"I found my perfect match on Super Saiyan. We have so much in common, and it feels like we've known each other forever. Thank you, Super Saiyan!"
+                    </p>
+                </div>
+            </div>
+            <div class="flexitem" id="flexitem6">
+                <div class="storyimage">
+                    <img src="/images/blog/images.jpg">
+                </div>
+                <div class="storycontent">
+                    <p>"Super Saiyan helped me find someone who is not only my partner but also my best friend. We have so much fun together and always find something new to do."
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Frequently asked questions
+                <hr>
+            </h1>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc1">
+                <label for="acc1">
+                    <h2>01</h2>
+                    <h3> Is Super Saiyan safe to use?
+                    </h3>
+                </label>
+                <div class="content">
+                    <p> We take safety seriously and have measures in place to protect our users, such as profile verification and reporting features.
+                    </p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc2">
+                <label for="acc2">
+                    <h2>02</h2>
+                    <h3>Can I search for specific criteria on Super Saiyan?</h3>
+                </label>
+                <div class="content">
+                    <p> Yes, you can filter your search results by age, location, interests, and more</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc3">
+                <label for="acc3">
+                    <h2>03</h2>
+                    <h3>How does Super Saiyan match me with potential partners?
+                    </h3>
+                </label>
+                <div class="content">
+                    <p>Our algorithm considers your preferences, interests, and behavior to suggest compatible matches.
+                    </p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc4">
+                <label for="acc4">
+                    <h2>04</h2>
+                    <h3> Can I message someone who hasn't matched with me?
+                    </h3>
+                </label>
+                <div class="content">
+                    <p> No, you can only message someone who has liked you back.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc5">
+                <label for="acc5">
+                    <h2>05</h2>
+                    <h3> What should I include in my Super Saiyan profile?</h3>
+                </label>
+                <div class="content">
+                    <p>Be honest and showcase your interests, hobbies, and personality. A good profile photo is also important.
+
+                    </p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc6">
+                <label for="acc6">
+                    <h2>06</h2>
+                    <h3> How long does it take to get a match on Super Saiyan?
+                    </h3>
+                </label>
+                <div class="content">
+                    <p>It varies depending on your preferences and behavior, but many users find matches within a few days of using the platform.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc7">
+                <label for="acc7">
+                    <h2>07</h2>
+                    <h3>How many matches can I have on Super Saiyan?
+                    </h3>
+                </label>
+                <div class="content">
+                    <p>There's no limit to how many matches you can have.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,802 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+
+*{
+    /* background-color: rgb(255 219 200); */
+     /* background-image: url(https://img.freepik.com/free-photo/peaceful-view-sunset-light_23-2148851751.jpg?w=1060&t=st=1679649179~exp=1679649779~hmac=ccea5a9b142c6c502fe998de3e4a475538ea91aea0ad2477105cdf917abf1c61);
+    background-repeat: no-repeat; 
+    background-size: cover; */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ 
+/* NABAR */
+html{
+    
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+}
+.toggle{
+    color: white;
+    font-size: 1.9rem;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    background-image: none;
+}
+ul{
+    background-color: transparent;
+    background-image: none;
+}
+li{
+    list-style: none;
+    background-color: transparent;
+    background-image: none;
+}
+a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    background-color: transparent;
+    background-image: none;
+    font-size: 20px;
+}
+a:hover{
+    color: #e22030;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-image: linear-gradient(rgba(21, 21, 21, 0.579),rgba(36, 35, 35, 0.574),rgba(36, 35, 35, 0.673)),url();
+}
+.navbar{
+    width: 100%;
+    height: 58px;
+    max-width: 1200px;
+    margin: 0 auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    background-image: none;
+}
+.navbar .logo img{
+    width: 50px;
+    padding-top: 4px;
+     background-color: transparent;
+    background-image: none;
+}
+.navbar .links{
+    display: flex;
+    gap: 4rem;    
+}
+.action{
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    background-color: transparent;
+    background-color:#e22030;
+    font-size: 20px;
+
+    
+    background-image: none;
+}
+.action:hover{
+    background-color:white;
+    color:#e22030;
+    scale: 1.05;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width:30 px;
+    background:aqua;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+    background-image: linear-gradient(rgba(21, 21, 21, 0.579),rgba(36, 35, 35, 0.574),rgba(36, 35, 35, 0.673)),url();
+
+}
+
+.navbar .toggle{
+    float:right;
+}
+.fa-solid{ 
+    background-image: none;
+    background-color: transparent;
+}
+
+.dropdown li{
+    list-style: none;
+    height: 35px;
+    padding-left: 45%;
+    background-image: linear-gradient(rgba(21, 21, 21, 0.579),rgba(36, 35, 35, 0.574),rgba(36, 35, 35, 0.673)),url();
+} 
+    
+
+.dropdown.action{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.header-border{
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+}
+@media(max-width:992px){
+    .navbar .links,
+    .navbar .action{
+        display: none;
+    }
+    .navbar .toggle{
+        display:inline-block;
+        color:white;
+    }
+
+    .dropdown{
+        display: block;
+    }
+}
+@media(max-width:576px){
+    .dropdown{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/* REGISTRATION PAGE  */
+.body{
+    justify-content: center;
+}
+
+
+
+
+.frame{
+    /* border: 2px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    border-radius: 12px;
+    padding: 50px 0px 50px 0px;
+    overflow: auto;
+    border-bottom-left-radius: 10px;
+    background-color: transparent;
+    background-image: none;
+    background-image: url(https://img.freepik.com/free-photo/peaceful-view-sunset-light_23-2148851751.jpg?w=1060&t=st=1679649179~exp=1679649779~hmac=ccea5a9b142c6c502fe998de3e4a475538ea91aea0ad2477105cdf917abf1c61);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.image{
+    width: 670px;
+    height: 520px;
+    margin: 0px 0px -4px 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.1s;
+    box-shadow:7px 7px rgb(94, 151, 161) ;  
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/21/13/17/couple-1845334_960_720.jpg");
+    box-shadow: 7px 7px 10px 6px #242424 ;
+}
+.branding{
+    background-color: transparent;
+    background-image: none;
+    color: #ff3a88;
+    text-align: center;
+    margin:140px 0px 0px 0px;
+    font-size: 100px;
+    font-family:'Moon Dance', cursive;
+}
+.tagline{
+    background-color: transparent;
+    background-image: none;
+    color: #ffffff;
+    text-align: center;
+    margin-top:0px;
+    font-size: 70PX;
+    font-weight: 100;
+    font-family: Delicious Handrawn;
+}
+.image:hover{
+    width: 670px;
+}
+.form{ 
+    
+    background-image:url(https://img.freepik.com/free-photo/two-people-fall-love-shadow_181624-43697.jpg?w=360&t=st=1679652317~exp=1679652917~hmac=d7e4dadc8ddd46653900c6e485d1450ec735ef95314631e81242cd4a80fb50df);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    width: 420px;
+    height: 520px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 10px 10px transparent;
+    overflow:auto;
+    transition: 0.5s;
+    box-shadow: 7px 7px 10px 6px #242424 ;
+    
+}
+.form:hover{
+    width: 420px;
+}
+.form::-webkit-scrollbar{
+    display:none;
+}
+.heading{
+    background-image: none;
+    background-color: transparent;
+    color: white;
+    margin: 20px 40px 10px 40px;
+    font-family: monospace;
+}
+.details{
+    background-image: none;
+    background-color:transparent;
+    border-bottom: 3px solid  rgb(216, 231, 245);
+    margin: 0px 20px 40px 5px;
+    padding: 0px 0px 3px 0px;
+    color: white;
+  
+    
+}
+.details:hover{
+    border-bottom: 3px solid #c98ec5;
+}
+p{
+    background-image: none;
+    background-color:transparent;
+    color: white;
+    display: inline-block;
+    margin: 10px 0px 20px 20px;
+    font-family: monospace;
+    font-size: large;
+}
+input{
+    background-image: none;
+    margin: 0px 0px 0px 0px;
+    background-color:transparent;
+    padding: 0px 0px 0px 0px;
+    border-style:none;
+    font-size: large;
+    color: white;
+    width: 240px;
+}
+input:focus{
+    outline: none;
+}
+.name{
+    margin: 0px 0px 0px 78px;
+}
+.number{
+    margin: 0px 20px 0px 24px;
+
+}
+.gmail{
+    margin: 0px 0px 0px 70px;
+}
+#number{
+    margin: 0px 0px 0px 20px;
+    width: 195px;
+}
+#date{
+    width: 230px;
+}
+.gender{
+    width: 20px;
+
+}
+
+.gender:focus{
+    background-color: #f2b995;
+}
+#male{
+    background-image: none;
+    background-color:transparent;
+    margin: 0px 40px 0px 70px;
+}
+#female{
+    background-image: none;
+    background-color:transparent;
+    margin: 0px 30px 0px 5px;
+}
+#others{
+    background-image: none;
+    background-color:transparent;
+    margin: 0px 100px 0px 170px;
+}
+
+.borderless{
+    
+    border-bottom: none;
+    margin: 0px 66px 0px 14px;
+}
+
+.borderless:hover{
+    border-bottom: none;
+}
+.marital{
+    width: 20px;
+}
+#single{
+    background-image: none;
+    background-color:transparent;
+    margin: 0px 40px 0px 0px;
+}
+#married{
+    background-image: none;
+    background-color:transparent;
+    margin: 0px 30px 0px 0px;
+}
+#divorced{
+    background-image: none;
+    background-color:transparent;
+    margin: 0px 50px 0px 170px;
+}
+.hobby{
+    margin: 10px 0px 0px 0px ;
+    background-color: rgb(87 149 255 / 39%);
+    background-image: none;
+    border-style: none;
+    outline: none;
+    color: #ffffff;
+    width: 300px;
+}
+textarea{
+resize: none;
+}
+
+.button{
+    border-radius: 20px;
+    background-color: red;
+    margin: 20px 0px 0px 0px; 
+    width: unset;
+    padding: 5px 35px 5px 35px;
+    
+}
+.button:hover{
+    cursor: pointer;
+    zoom: 110%;   
+}
+.outerbutton{
+    background-color:transparent;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: none;
+}
+@media(max-width:1280px) {
+    .frame{
+        /* background-color: rgb(255 219 200); */
+        background-image: url(https://img.freepik.com/free-photo/peaceful-view-sunset-light_23-2148851751.jpg?w=1060&t=st=1679649179~exp=1679649779~hmac=ccea5a9b142c6c502fe998de3e4a475538ea91aea0ad2477105cdf917abf1c61);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+    }
+}
+
+@media(max-width:1080px) {
+    .image{
+        display: none;
+        
+    }
+    .frame{
+        /* background-color: rgb(255 219 200); */
+        background-image: url(https://img.freepik.com/free-photo/inspiring-view-sunrise-light_23-2148851737.jpg?w=360&t=st=1679650813~exp=1679651413~hmac=54cca74233f58233f83109f1e190ce2077331d32c8dbae3d26f19af38ee46aa7);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+
+    }
+    .form{
+    
+    transition: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+    
+    } 
+    
+    .same{
+        display: inline-block;
+        margin: 0px 0px 0px 0px;
+        width: 200px;
+        justify-content: space-between;
+    }
+    .number{
+        margin: 0px 40px 0px 30px;   
+    }
+    #number{
+        display: inline-block;
+        margin: 0px 0px 0px 0px;
+        width: 160px;
+    }
+    .name{
+        margin: 0px 0px 0px 85px;
+    }
+    .gmail{
+        margin: 0px 0px 0px 65px;
+    }
+    .heading{
+        margin:20px 10px 30px 10px;
+    }
+    #male{
+        background-image: none;
+        background-color:transparent;
+        margin: 0px 40px 0px 40px;
+    }
+    #female{
+        background-image: none;
+        background-color:transparent;
+        margin: 0px 10px 0px 5px;
+    }
+    #others{
+        background-image: none;
+        background-color:transparent;
+        margin: 0px 100px 0px 140px;
+    }
+    #single{
+        background-image: none;
+        background-color:transparent;
+        margin: 0px 10px 0px 0px;
+    }
+    #married{
+        background-image: none;
+        background-color:transparent;
+        margin: 0px 0px 0px 0px;
+    }
+    #divorced{
+        background-image: none;
+        background-color:transparent;
+        margin: 0px 50px 0px 170px;
+    }
+    .hobby{
+        width: 250px;     
+    }
+ }
+    @media(max-width:800px){
+        .frame{
+            /* background-color: rgb(255 219 200); */
+            background-image: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            background: rgb(207 226 245);
+        }
+        .image{
+            display: none;
+        }
+        
+    .form{
+        margin: 0px 10px 50px 10px;
+        border-radius: 10px;
+        padding: unset;
+        
+        width:350px;
+
+    } 
+        .form:hover{
+            width: 370px;
+        }
+        .number{
+            margin: 0px 0px 0px 05px;
+        }
+        #number{
+            display: inline-block;
+            margin: 0px 0px 0px 0px;
+            width: 160px;
+        }
+        .name{
+            margin: 0px 0px 0px 55px;
+        }
+        .gmail{
+            margin: 0px 0px 0px 45px;
+        }
+        .heading{
+            margin:20px 10px 30px 10px;
+        }
+        #date{
+            width: 100px;
+        }
+        #male{
+            background-image: none;
+            background-color:transparent;
+            margin: 0px 40px 0px 40px;
+        }
+        #female{
+            background-image: none;
+            background-color:transparent;
+            margin: 0px 10px 0px 5px;
+        }
+        #others{
+            background-image: none;
+            background-color:transparent;
+            margin: 0px 100px 0px 140px;
+        }
+        #single{
+            background-image: none;
+            background-color:transparent;
+            margin: 0px 10px 0px 0px;
+        }
+        #married{
+            background-image: none;
+            background-color:transparent;
+            margin: 0px 0px 0px 0px;
+        }
+        #divorced{
+            background-image: none;
+            background-color:transparent;
+            margin: 0px 50px 0px 170px;
+        }
+        .hobby{
+            width: 250px;     
+        }
+        
+    }
+    
+
+
+    /* fotter  */
+
+
+    
+footer {
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    color: #d9d9d9;
+  }
+  .main-content {
+    display: flex;
+    background-color: transparent;
+    background-image: none;
+  }
+  .main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    background-color: transparent;
+    background-image: none;
+    
+  }
+  .box h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+    background-image: none;
+  }
+  .box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+    background-color: transparent;
+    background-image: none;
+  }
+  .box .content:before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+   
+  }
+  .box .content:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+   
+  }
+  .left .content p {
+    text-align: justify;
+    font-size: 1.4rem;
+    background-color: transparent;
+    background-image: none;
+  }
+  .left .content .social {
+    margin: 20px 0 0 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .left .content .social a {
+    padding: 0 2px;
+    background-color: transparent;
+    background-image: none;
+  }
+  .left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+  }
+  .left .content .social a span:hover {
+    background: #f12020;
+    background-color: transparent;
+    background-image: none;
+  }
+  .center .content .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    
+  }
+  .center .content .fas:hover {
+    background: #f12020;
+    
+  }
+  .center .content .text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-left: 10px;
+    background-color: transparent;
+    background-image: none;
+  }
+  .center .content .phone {
+    margin: 15px 0;
+    background-color: transparent;
+    background-image: none;
+  }
+  .right form .text {
+    font-size: 1.4rem;
+    margin-bottom: 2px;
+    color: #656565;
+    
+  }
+  .right form .msg {
+    margin-top: 10px;
+    
+  }
+  .right form input,
+  .right form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+    
+  }
+  .right form input:focus,
+  .right form textarea:focus {
+    outline-color: #3498db;
+    ;
+  }
+  .right form input {
+    height: 35px;
+    
+  }
+  .right form .btn {
+    margin-top: 10px;
+  }
+  .right form .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+  .right form .btn button:hover {
+    background: #000;
+    color: white;
+  }
+  .bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+  }
+  .bottom center span {
+    color: #e9e2e2;
+    font-size: 1.3rem;
+    background-color: transparent;
+    background-image: none;
+  }
+  .bottom center a {
+    color: #f12020;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+  .bottom center a:hover {
+    text-decoration: underline;
+  }
+  .email,.place{
+    background-color: transparent;
+    background-image: none;
+  }
+
+  @media screen and (max-width: 900px) {
+    footer {
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box {
+      margin: 5px 0;
+    }
+  }
+  @media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action {
+      display: none;
+    }
+    .navbar .toggle {
+      display: inline-block;
+      color: white;
+    }
+  
+    .dropdown {
+      display: block;
+    }
+  }
+  @media (max-width: 576px) {
+    .dropdown {
+      left: 2rem;
+      width: unset;
+    }
+  }
+  @media (max-width: 887px) {
+    .home .content h3 {
+      font-size: 2rem;
+      line-height: 1.9rem;
+      flex-wrap: wrap;
+      margin-left: -5%;
+    }
+  
+    .home .content span {
+      font-size: 2rem;
+      line-height: 1.7rem;
+      flex-wrap: wrap;
+    }
+    .home.content p {
+
+      line-height: 0.2rem;
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 533px) {
+    #button {
+      font-size: 1.4rem;
+    }
+  }
+    

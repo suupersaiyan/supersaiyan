@@ -1,0 +1,223 @@
+<!-- ABH MAT KR  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supersaiyan/Registration</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Moon+Dance&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/images/form/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="images/form/-6118549228528711158_121.jpg" alt=""></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">community</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li><a href="Blogs">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="action">Register</a>
+            <div class="toggle"> 
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">community</a></li>
+            <li><a href="#">Statistics</a></li>
+            <li><a href="Blogs">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="action">Register</a></li>                 
+        </div>
+        
+    </header>
+    <div class="header-border"></div>
+    <script>
+        const toggleBtn=document.querySelector('.toggle');
+        const btnIcon=document.querySelector('.toggle i');
+        const dropdownMenu=document.querySelector('.dropdown');
+
+        toggleBtn.onclick = function()
+        {
+            dropdownMenu.classList.toggle('dropdown')
+            const isOpen = dropdownMenu.classList.contains('dropdown');
+            btnIcon.classList = isOpen ? "fa-solid fa-bars" : "fa-solid fa-xmark"
+            
+        }
+    </script>
+
+
+<!-- form  -->
+   
+        <div class="frame">
+            <div  class="image">
+                <h1 class="branding"> Super Saiyan </h1>
+                <h1 class="tagline">Make Happy Connections</h1>
+                
+            </div>
+            <div class="form">
+                <h1 class="heading">Register yourself here</h1>
+                <!-- here is name -->
+
+
+
+                <P>Name:</P>
+                <span class="details name same">
+                    <input type="text" id="name" placeholder="Your Name">
+                </span>
+                <!-- here is mobile no. -->
+
+
+
+                <P>Mobile no.:</P>
+                <span class="details number same">
+                    +91<input type="tel" id="number" placeholder="XXXXXXXXXX" maxlength="10">
+                </span>
+                <!-- here is gmail -->
+
+
+
+                <P>Gmail:</P>
+                <span class="details gmail same">
+                    <input type="text" id="gmail" placeholder="XXXXXXX@Gmail.com">
+                </span>
+                <!-- here is date of birth -->
+
+
+
+                <P>Date of birth:</P>
+                <span class="details same">
+                    <input type="date" id="date" placeholder="">
+                </span>
+                <!-- here is gender -->
+
+
+
+                <P>Gender:</P>
+                <span class="details borderless" id="gender">
+
+                    <span  id="male"> Male: <input class="gender" type="radio" name="gender"> </span> 
+                    <span id="female"> Female: <input class="gender" type="radio" name="gender"></span>
+                    <span  id="others"> Others: <input class="gender" type="radio" name="gender"></span>
+                </span>
+                <!-- here is marital status -->
+
+
+
+                <P>Marital status:</P>
+                <span class="details borderless" id="marital">
+                    <span id="single"> Single: <input class="marital" type="radio" name="marital"></span>
+                    <span id="married"> Married <input class="marital" type="radio" name="marital"></span>
+                    <span id="divorced"> Divorced: <input class="marital" type="radio" name="marital"></span>
+                </span>
+                <!-- interest -->
+                <P>Hobby:</P>
+                    <textarea class="hobby" placeholder="Write your hobbies here!" rows="1" >
+                        </textarea>
+        
+               
+                 
+                <div class="outerbutton">
+
+                    <a href="community.html"><input type="submit" class=" button"></a>
+                </div>
+            
+
+
+
+
+                
+
+            </div> 
+        </div>
+
+
+
+        <!-- foteer  -->
+
+
+        <footer>
+            <div class="main-content">
+              <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                  <p>
+                      Super Saiyan is a user-friendly dating platform that provides a safe and enjoyable environment for people to connect and build relationships. Our advanced matching algorithm and extensive user base make it easy for users to find someone who shares similar interests and values. Our goal is to create a positive impact on people's lives by helping them find love and happiness.
+                  </p>
+                  <div class="social">
+                    <a href="https://facebook.com/coding.np"
+                      ><span class="fab fa-facebook-f"></span
+                    ></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="https://instagram.com/coding.np"
+                      ><span class="fab fa-instagram"></span
+                    ></a>
+                    <a href="https://youtube.com/c/codingnepal"
+                      ><span class="fab fa-youtube"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                  <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Bhopal, India</span>
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+91-7895XXXXXX</span>
+                  </div>
+                  <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">supersaiyanasper@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+              <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                  <form action="#">
+                    <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email" required />
+                    </div>
+                    <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn"><button type="submit">Send</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <center>
+                <span class="credit"
+                  >Created By
+                  <a href="#">Super Saiyan</a> |
+                </span>
+                <span class="far fa-copyright"></span
+                ><span> 2023 All rights reserved.</span>
+              </center>
+            </div>
+          </footer>
+   
+      
+
+
+</body>
+</html>
